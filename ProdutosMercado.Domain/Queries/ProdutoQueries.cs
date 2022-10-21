@@ -9,9 +9,4 @@ public class ProdutoQueries
     {
         return x => x.Id == id;
     }
-
-    public static Expression<Func<Produto, bool>> BuscarTodos(Fornecedor fornecedor)
-    {
-        return x => x.Fornecedor.Equals(fornecedor);
-    }
 }
